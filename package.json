@@ -10,10 +10,13 @@
     ]
   },
   "scripts": {
-    "start:server": "nodemon",
-    "start:client": "webpack-dev-server",
-    "seed": "node db/seeds"
-  },
+      "start:server": "nodemon",
+      "start:client": "webpack-dev-server",
+      "build": "webpack -p",
+      "seed": "node db/seeds",
+      "start": "yarn build && node index",
+      "test": "nyc mocha test/**/*_spec.js --require test/spec_helper --recursive --exit"
+    },
   "engines": {
   "node": "9.10.0"
 },
