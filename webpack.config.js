@@ -1,7 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const AntdScssThemePlugin = require('antd-scss-theme-plugin');
-const isProduction = process.env.NODE_ENV === 'production';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpack = new HtmlWebpackPlugin({
