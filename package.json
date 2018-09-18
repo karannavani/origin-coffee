@@ -14,6 +14,9 @@
     "start:client": "webpack-dev-server",
     "seed": "node db/seeds"
   },
+  "engines": {
+  "node": "9.10.0"
+},
   "dependencies": {
     "antd": "^3.8.4",
     "axios": "^0.18.0",
