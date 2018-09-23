@@ -1,6 +1,9 @@
 $primary-color: #fe8019;
 
-
+.ant-card-body {
+  padding: 0;
+  margin: 24px;
+}
 .ant-layout-header {
   background-color: white;
 }

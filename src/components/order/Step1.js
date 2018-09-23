@@ -20,7 +20,7 @@ const Step1 = ({items, handleChange, handleCoffeeChoice, showOptions, selectedIt
         {!showOptions && items && items.map((item) =>
           <Col key={item._id} id={`${item.beverage}|${item.price}`} >
             <Card
-              id={`${item.beverage}|${item.price}`} 
+              id={`${item.beverage}|${item.price}`}
               onClick={handleChange}
               style={{ width: 300, height: 300 }}
               cover={<img id={`${item.beverage}|${item.price}`} alt="coffee" src={`../../assets/${item.beverage}.jpg` } height="180" />}
