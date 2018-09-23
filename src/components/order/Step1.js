@@ -37,10 +37,8 @@ const Step1 = ({items, handleChange, handleCoffeeChoice, showOptions, selectedIt
         {showOptions && selectedItem && selectedItem[0].type.map(type =>
           <Col key={type._id} id={`${type.choice}|${type.price}`}>
             {type.choice &&  <Card id={`${type.choice}|${type.price}`} onClick={handleCoffeeChoice} style={{ width: 180, height: 180 }}>
-              <div className="id-div" id={`${type.choice}|${type.price}`}>
-                <h2 id={`${type.choice}|${type.price}`}>{type.choice}</h2>
-                <h3 id={`${type.choice}|${type.price}`}>£{type.price}</h3>
-              </div>
+              <h2 id={`${type.choice}|${type.price}`}>{type.choice}</h2>
+              <h3 id={`${type.choice}|${type.price}`}>£{type.price}</h3>
             </Card>}
           </Col>
         )
